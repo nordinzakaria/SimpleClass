@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 public class Transaction
 {
-    public int data;
+    public int val;
     public Date date;
 }

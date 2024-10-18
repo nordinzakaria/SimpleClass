@@ -19,7 +19,7 @@ public class TransactionList
             string val = Console.ReadLine();
             dataset[i] = new Transaction();
 
-            dataset[i].data = int.Parse(val);
+            dataset[i].val = int.Parse(val);
 
             dataset[i].date = new Date();
             Console.Write("Day: ");
@@ -42,7 +42,7 @@ public class TransactionList
         Console.WriteLine("Transaction values:");
         for (int i = 0; i < TRANSACTION_SZ; i++)
         {
-            Console.WriteLine("Val: " + dataset[i].data);
+            Console.WriteLine("Val: " + dataset[i].val);
             Console.WriteLine("Day: " + dataset[i].date.day);
             Console.WriteLine("Month: " + dataset[i].date.month);
             Console.WriteLine("Year: " + dataset[i].date.year);
